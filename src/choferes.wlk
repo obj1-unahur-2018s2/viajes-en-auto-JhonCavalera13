@@ -17,6 +17,12 @@ object juana{
 	method precioViaje(cliente, kms){
 		if (kms < 8){return 100}
 		else {return 200}}}	
+		
+object melina{
+	var paraQuienEstaTrabajando
+	method estaTrabajandoPara(quien){ paraQuienEstaTrabajando = quien} 
+	method precioPactadoPorKm() { return paraQuienEstaTrabajando.precioViaje(cliente,kms)}
+}		
 		 	
 object ludmila {
 	method precioPactadoPorKm(){ return 18}}
